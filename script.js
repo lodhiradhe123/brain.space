@@ -331,13 +331,62 @@ var tl6 = gsap.timeline({
   scrollTrigger: {
     trigger: "#page6",
     scroller: "#main",
-    markers: true,
+    // markers: true,
     start: "top 60%",
     end: "top -80%",
     scrub: true,
   },
 });
 tl6.from("#page6", {
+  y: 40,
+  duration: 0.8,
+  opacity: 0,
+  scale: 2,
+});
+
+var tl7 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#page7",
+    scroller: "#main",
+    // markers: true,
+    start: "top 60%",
+    end: "top -80%",
+    scrub: true,
+  },
+});
+tl7.from("#page7", {
+  y: 40,
+  duration: 0.8,
+  opacity: 0,
+  scale: 2,
+});
+var tl8 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#page8right",
+    scroller: "#main",
+    // markers: true,
+    start: "top 60%",
+    end: "top -80%",
+    scrub: true,
+  },
+});
+tl8.from("#page8right,#page8left ", {
+  y: 40,
+  duration: 0.8,
+  opacity: 0,
+  scale: 2,
+});
+var tl9 = gsap.timeline({
+  scrollTrigger: {
+    trigger: "#page9",
+    scroller: "#main",
+    // markers: true,
+    start: "top 90%",
+    end: "top 30%",
+    scrub: true,
+  },
+});
+tl9.from("#page9 #leftcontent h2 ", {
   y: 40,
   duration: 0.8,
   opacity: 0,
